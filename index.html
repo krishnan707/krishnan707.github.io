@@ -1,14 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	  <h1>Test</h1>
-	  <a href="about-me.html">About Me</a>
-  </body>
+    <title>Anna Klinsman - Wedding & Lifestyle Photographer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anna Klinsman</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">PORTFOLIO</a>
+            <a href="#">ABOUT</a>
+            <a href="#">INVESTMENTS</a>
+            <a href="#">BLOG</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="/api/placeholder/1200/600" alt="Couple in desert landscape">
+            <div class="hero-text">
+                <h2>Moments of Love</h2>
+                <p>CAPTURING MEMORIES</p>
+                <a href="#" class="button">Book a Photo Shoot</a>
+            </div>
+        </section>
+
+        <section class="content">
+            <h2>Hello, I am Anna Klinsman.</h2>
+            <h3>A Wedding & Lifestyle Photographer.</h3>
+            <p>Hello, I am Anna, a lifestyle photographer based in Rome, Italy. My passion is to document the fleeting moments of love to create timeless, beautiful images as memories. I love capturing weddings, elopements and also families. My style is minimal, natural and unhurried. Looking forward to capturing your special day for eternity!</p>
+            <a href="#" class="button">SAY HELLO</a>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Smiling woman">
+                <h3>About Anna</h3>
+                <p>I try and translate the beauty of love through my work as a wedding photographer. Let's work together to create eternal memories of your special day.</p>
+                <a href="#" class="button">MEET ME</a>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Wedding couple in field">
+                <h3>Latest Work</h3>
+                <p>Whether it's a wedding or an elopement, or just capturing two humans in love, I have done it all. My visual style is chic and understated, full of life and emotions.</p>
+                <a href="#" class="button">SEE WORK</a>
+            </div>
+            <div class="gallery-item">
+                <img src="/api/placeholder/400/300" alt="Couple in vintage car">
+                <h3>Pricing & Packages</h3>
+                <p>Every shoot is unique and different. However, I have put together a pricing page that would give you an idea on how much to budget for the photoshoot of your special day.</p>
+                <a href="#" class="button">SEE PRICING</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anna Klinsman. All rights reserved.</p>
+    </footer>
+</body>
 </html>
